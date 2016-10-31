@@ -1,0 +1,237 @@
+@charset "UTF-8";
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 100%;
+  color: #383e47;
+  width: 100%;
+  /*footer height plus padding*/
+  margin-bottom: 200px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:link {
+    text-decoration: none; }
+  a:hover {
+    color: #FAA61A; }
+
+h1 {
+  font-size: 3.5em;
+  line-height: 1em;
+  font-weight: bold; }
+
+h2 {
+  font-size: 2em;
+  line-height: 2em;
+  font-weight: bold; }
+
+h3 {
+  font-size: 1.8em;
+  line-height: 2.2em;
+  font-weight: normal; }
+
+p {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/* ======== HEADER ======== */
+.logo {
+  position: fixed;
+  float: left;
+  margin: 15px 0px 0px 15px; }
+
+.social-icons {
+  position: fixed;
+  padding-top: 10px;
+  z-index: 1000; }
+
+.fa-twitter,
+.fa-facebook {
+  background-color: rgba(187, 189, 192, 0.9);
+  padding: 5px;
+  color: #5b5b5b;
+  float: right;
+  margin: 5px 10px 0px 0px;
+  cursor: pointer; }
+  .fa-twitter:hover,
+  .fa-facebook:hover {
+    color: #FAA61A; }
+
+/* ======== Footer ======== */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+  background: #1c2124 none repeat scroll 0 0;
+  text-align: left;
+  font-size: 14px;
+  padding: 0;
+  display: block; }
+
+#footer-wraper {
+  padding-top: 20px;
+  margin-left: 5%;
+  margin-left: 5%; }
+
+.links li {
+  color: #fff;
+  font-size: 0.7em; }
+  @media (max-width: 768px) {
+    .links li {
+      display: none; } }
+
+.copyright {
+  float: left;
+  font-size: 0.7em;
+  color: #fff; }
+  @media (max-width: 768px) {
+    .copyright {
+      font-size: 0.5em; } }
+  .copyright p {
+    padding-bottom: 0px; }
+
+.copying-info {
+  padding-top: 20px;
+  font-size: 0.7em;
+  line-height: 15px;
+  color: #888c91; }
+  @media (max-width: 768px) {
+    .copying-info {
+      padding-top: 10px;
+      font-size: 0.5em; } }
+  @media (max-width: 480px) {
+    .copying-info {
+      padding-top: 10px; } }
+
+.support-site:link,
+.support-site:visited {
+  color: #FAA61A; }
+
+.cover {
+  margin-bottom: 5%;
+  margin-top: 5%; }
+  @media (max-width: 480px) {
+    .cover {
+      margin-top: 15%; } }
+
+.text-sm {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  font-weight: 300; }
+  .text-sm span {
+    background: rgba(242, 239, 153, 0.5); }
+
+.subtitle {
+  font-size: 1.7em;
+  line-height: 1.5em;
+  font-weight: 300;
+  color: #383e47; }
+
+.main-number {
+  font-family: 'PT Mono', monospace;
+  font-size: 5.7em;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin-top: 0.5em; }
+  @media (max-width: 480px) {
+    .main-number {
+      font-size: 4em;
+      line-height: 1.3em;
+      font-weight: bold; } }
+
+.expense-number {
+  font-family: 'PT Mono', monospace;
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: bold; }
+
+.center {
+  text-align: center; }
+
+.annotation {
+  float: right;
+  margin-right: 10%;
+  margin-bottom: 10px; }
+
+.credits {
+  color: #383e47;
+  font-size: 1.3em;
+  line-height: 1.5em; }
+  .credits span {
+    font-weight: bold; }
+  .credits.date {
+    margin-top: 1em;
+    font-size: 1.1em;
+    font-weight: 300; }
+
+p.expense-title {
+  font-size: 1.8em;
+  line-height: 1.5em; }
+p span {
+  background: rgba(242, 239, 153, 0.5);
+  padding: 1px; }
+p span.itallic {
+  background: none;
+  font-style: italic; }
+
+.new-section {
+  margin-top: 15%; }
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.annotation text {
+  fill: #ссс;
+  stroke: none;
+  font-size: .8em; }
+
+.svg-container {
+  display: block;
+  position: relative;
+  max-height: 200px;
+  width: 40%;
+  margin: auto;
+  padding-bottom: 9%;
+  vertical-align: middle;
+  overflow: hidden; }
+  @media (max-width: 480px) {
+    .svg-container {
+      width: 100%;
+      padding-bottom: 23%; } }
+
+.svg-content {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.read-more {
+  margin-bottom: 15px; }
+
+.dollar {
+  animation: pulse 5s infinite; }
+
+.euro {
+  animation: pulse 8s infinite; }
+
+.hryvnia {
+  animation: pulse 10s infinite; }
+
+@keyframes pulse {
+  0% {
+    fill: #383e47; }
+  30% {
+    fill: #e8de25; }
+  60% {
+    fill: #cae8d9; }
+  100% {
+    fill: #383e47; } }
+
+/*# sourceMappingURL=application.css.map */

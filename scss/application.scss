@@ -1,0 +1,146 @@
+// ==============
+// Global imports
+// ==============
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "components/header";
+@import "components/footer";
+
+
+.cover {
+  margin-bottom:5%;
+  margin-top:5%;
+  @media #{$brk-spnarrow} {
+      margin-top: 15%;
+  }
+}
+
+.text-sm {
+    @include text(1.4em, 1.6em, 300);
+    & span {
+      background: rgba(242,239,153,0.5);
+    }
+}
+
+.subtitle {
+    @include text(1.7em, 1.5em, 300);
+    color: #383e47;
+}
+
+.main-number {
+    font-family: 'PT Mono', monospace;
+    @include text(5.7em, 1.3em, bold);
+    margin-top: 0.5em;
+    @media #{$brk-spnarrow} {
+        @include text(4em, 1.3em, bold);
+    }
+
+}
+
+.expense-number {
+  font-family: 'PT Mono', monospace;
+  @include text(3em, 1em, bold);
+}
+
+.center {
+  text-align: center;
+}
+
+.annotation {
+  float: right;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+.credits {
+  color:$main-text;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  & span {
+    font-weight: bold;
+  }
+  &.date {
+    margin-top:1em;
+    font-size:1.1em;
+    font-weight:300;
+  }
+}
+
+p  {
+    &.expense-title {
+        @include text(1.8em,1.5em);
+    }
+
+    & span {
+      background: rgba(242,239,153,0.5);
+      padding: 1px;
+    }
+    & span.itallic {
+      background: none;
+      font-style: italic;
+    }
+}
+
+
+
+.new-section {
+  margin-top: 15%;
+}
+
+.row{
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.annotation text {
+  fill: #ссс;
+  stroke: none;
+  font-size: .8em;
+}
+
+.svg-container {
+  display: block;
+  position: relative;
+  max-height: 200px;
+  width: 40%;
+  margin:auto;
+  padding-bottom: 9%;
+  vertical-align: middle;
+  overflow: hidden;
+  @media #{$brk-spnarrow} {
+    width: 100%;
+    padding-bottom: 23%;
+  }
+}
+
+.svg-content {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+.read-more {
+  margin-bottom: 15px;
+}
+
+
+
+.dollar {
+  animation: pulse 5s infinite;
+}
+
+.euro {
+  animation: pulse 8s infinite;
+}
+
+.hryvnia {
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+  0% { fill: #383e47;  }
+  30% { fill: #e8de25; }
+  60% {  fill: #cae8d9; }
+  100% { fill: #383e47;  }
+}
