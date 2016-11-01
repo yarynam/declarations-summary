@@ -20,21 +20,25 @@
     <meta property="og:site_name" content="ТЕКСТИ.ORG.UA" />
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Гроші в банках"/>
-    <meta property="og:image" content="img/bg.png"/>
+    <meta property="og:image" content="http://texty.org.ua/d/declarations-summary/img/bg.png"/>
     <meta property="og:description" content="Скільки задекларували українські чиновники?"/>
-    <meta property="og:url" content=""/>
+    <meta property="og:url" content="http://texty.org.ua/d/declarations-summary/"/>
+    <meta property="article:publisher" content="https://www.facebook.com/TEXTY.org.ua" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:site" content="@textyorgua"/>
     <meta property="twitter:account_id" content="49572937"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:url" content="" />
+    <meta name="twitter:url" content="http://texty.org.ua/d/declarations-summary/" />
     <meta name="twitter:title" content="Гроші в банках"/>
     <meta name="twitter:description" content="Скільки задекларували українські чиновники?"/>
-    <meta name="twitter:image:src" content="img/bg.png"/>
+    <meta name="twitter:image:src" content="http://texty.org.ua/d/declarations-summary/img/bg.png"/>
     <meta name="twitter:image:width" content="1200"/>
     <meta name="twitter:image:height" content="630"/>
 
+    <!-- Other Meta Tags -->
+    <meta name="title" content="Гроші в банках">
+    <meta name="description" content="Скільки задекларували українські чиновники?" >
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,8 +46,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-
-
 </head>
 
 
@@ -175,9 +177,19 @@
         </div>
     </div>
 </footer>
-</div>
 
+<!-- Google analytics !-->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18136548-1']);
+    _gaq.push(['_trackPageview']);
 
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
 
 <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
 <script src="js/jars.js" type="text/javascript"></script>
@@ -218,7 +230,7 @@ $('.count').each(function () {
 function recs(container, number) {
       var paddingEl = 12;
       if ($(document).width() > 970) {
-          var countWidth = $(".col-lg-12").width()*0.7;;
+          var countWidth = $(".col-lg-12").width()*0.7;
         } else {
           var countWidth = $(".col-lg-12").width();
         }
