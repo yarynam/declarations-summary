@@ -236,7 +236,7 @@ $('.count').each(function () {
 ///////// create recs
 
 function recs(container, number) {
-      var paddingEl = 12;
+      var paddingEl = 9;
       if ($(document).width() > 970) {
           var countWidth = $(".col-lg-12").width()*0.7;
         } else {
@@ -245,7 +245,7 @@ function recs(container, number) {
       var elementsInRow  = Math.round(countWidth / paddingEl);
       var that = this;
       var data = [number],
-          countHeight = Math.ceil(data / elementsInRow) * 12,
+          countHeight = Math.ceil(data / elementsInRow) * 9,
           margin = {top: 0, right: 3, bottom: 15, left: 3},
           innerWidth = countWidth,
           innerHeight = countHeight + margin.bottom,
@@ -270,8 +270,8 @@ function recs(container, number) {
         .enter().append("rect")
         .attr("class", "fade")
         .style("fill", "#cae8d9")
-        .attr('width', 7)
-        .attr('height',7)
+        .attr('width', 4)
+        .attr('height',4)
         .style("opacity", 1)
         .attr("x", function(d,i) { row = (i%elementsInRow == 0) ? i/elementsInRow : row; return ((i+1)-row*elementsInRow) * paddingEl;})
         .attr("y", function(d,i) { row = (i%elementsInRow == 0) ? i/elementsInRow : row; return row * paddingEl;})
@@ -286,15 +286,14 @@ function recs(container, number) {
         id = obj.id
         viz_class = "." + id
         money = Math.round(obj.money/1000000);
-        sum = Math.round(obj.money/1000000);
+        sum = Math.round(obj.money/3000000);
         title = obj.title;
         text = obj.text;
 
         var description =  "<div class='row'>"
                 + "<div class='col-lg-3  col-md-3 center'>"
-                + "<div class='expense-number'>" + money + " млн грн" + "</div>"
-                + "<p class='expense-title'> <span>" + title + "</span></p>"
-                + "<p class='text-sm'>" + text + "</p>"
+                + "<div class='expense-number'> <span>" + money + " млн грн" + " <span></div>"
+                + "<p class='expense-title'> " + title + "</p>"
                 +"</div>"
                 +"<div class='col-lg-9 col-md-9 viz " + id + "'>" + "</div>"
                 + "</div>"
@@ -304,7 +303,7 @@ function recs(container, number) {
     }
 
 
-$(".roads").prepend("<div class='annotation'> 1 квадрат = 1 млн грн </div>");
+$(".roads").prepend("<div class='annotation'> 1 квадрат = 3 млн грн </div>");
 
 // </script>
 

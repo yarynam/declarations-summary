@@ -40,7 +40,11 @@
 
 .expense-number {
   font-family: 'PT Mono', monospace;
-  @include text(3em, 1em, bold);
+  @include text(2em, 1em, bold);
+  & span {
+    background: rgba(242,239,153,0.5);
+    padding: 1px;
+  }
 }
 
 .center {
@@ -68,7 +72,7 @@
 
 p  {
     &.expense-title {
-        @include text(1.8em,1.5em);
+        @include text(1.5em,1.5em);
     }
 
     & span {
