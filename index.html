@@ -69,14 +69,21 @@
 <div class="row cover center">
     <div class="jars svg-container"></div>
     <h1 class="maintitle">Гроші в банках</h1>
-    <p class="text-sm">Станом на <span class="update-date">02-11-2016</span> українські чиновники задекларували:</p>
-    <div class="col-lg-3 col-lg-offset-3 col-xs-6">
-      <div class="main-number count cash"> 7340</div>
-      <p class="subtitle"> млн гривень <br> заощаджень готівкою </p>
+    <div class="credits" >Над проектом працювали: <span>Ярина Михайлишин, Влад Герасименко, Марта Пукач </span> </div>
+    <br>
+    <br>
+    <p class="text-sm">Станом на <span class="update-date">03-11-2016</span> українські чиновники задекларували:</p>
+    <div class="col-lg-4  col-xs-6">
+      <div class="main-number count cash"> 18127</div>
+      <p class="subtitle"> млн гривень <br> заощаджень готівкою</p>
     </div>
-    <div class="col-lg-3 col-xs-6">
-      <div class="main-number count banks"> 9340</div>
+    <div class="col-lg-4 col-xs-6">
+      <div class="main-number count banks"> 6169</div>
       <p class="subtitle"> млн гривень <br> заощаджень в банках </p>
+    </div>
+    <div class="col-lg-4 col-xs-6">
+      <div class="main-number  banks"> 3,16%</div>
+      <p class="subtitle"> загалом від державного <br>бюджету України </p>
     </div>
 </div>
 
@@ -265,8 +272,8 @@ function recs(container, number) {
 
         id = obj.id
         viz_class = "." + id
-        money = Math.round(obj.money/1000)
-        sum = Math.round(obj.money/500);
+        money = Math.round(obj.money/1000000);
+        sum = Math.round(obj.money/1000000);
         title = obj.title;
         text = obj.text;
 
@@ -284,7 +291,7 @@ function recs(container, number) {
     }
 
 
-$(".defense").prepend("<div class='annotation'> 1 квадрат = 0,5 млн грн </div>");
+$(".roads").prepend("<div class='annotation'> 1 квадрат = 1 млн грн </div>");
 
 // </script>
 
